@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Facebook</title>
+    </head>
+     <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+    <style>
+        body{
+            background-color: #f1f1f1;
+        }
+        .container{
+            margin: auto;
+            width:100%;
+            height:100vh;
+        }
+        .inner-container{
+            margin:auto;
+        }
+        .userForm{
+            padding-top:20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+        }
+        .headerLogo img{
+            width:100%;
+            height:200px;
+            justify-content: center;
+            margin: auto;
+        }
+        #lowerDet{
+            color:#1877f2;
+        }
+        .middle-layer{
+            height:30px;
+            display:flex;
+        }
+        .line{
+            background: #cecece;
+            height: 1.5px;
+            position: relative;
+            top: 40%;
+            width: 9999px;
+        }
+        .form-control{
+            height: 50px;
+        }
+        ::placeholder{
+            font-size: 17px;
+        }
+        @media all and (max-width:768px){
+            .form-control{
+                height: 60px;
+            }
+            ::placeholder{
+                font-size: 17px;
+            }
+            .headerLogo img{
+                width:100%;
+                height:20vh;
+            }
+        }
+    </style>
+    <body>
+        <div class="container">
+            <div class="inner-container col-xs-12">
+                <div class="headerLogo col-xs-12 col-md-offset-4 col-md-4">
+                    <div class="col-xs-offset-1 col-xs-10 inner-logo">
+                        <img src="../static/assets/Facebook-Logo.wine.png" width="100%" height="80px" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <form class="userForm text-center col-xs-12 col-md-offset-4 col-md-4" method="post" action="/">
+                    <div class="form-group">
+                        <h4 id="headerText text-center">Log in to Facebook</h4>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Email address or phone number"  class="form-control" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Password" name="password" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="form-control" style="background-color: #1877f2;color:white;font-size: 20px;font-weight: 600">Log In</button>
+                    </div>
+                    <div class="form-group">
+                        <h6 id="lowerDet">Forgotten account?</h6>
+                    </div>
+                    <div class="form-group middle-layer">
+                        <div class="line"></div>
+                        <span class="ormiddle" style="color:#6d6d6d;font-size: 15px;font-family:Arial, Helvetica, sans-serif;padding-left: 10px;padding-right: 10px;">or</span>
+                        <div class="line"></div>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn" style="background-color: #42b72a;font-size:17px;color:white;font-weight: 600;padding:10px 16px;">Create New Account</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
